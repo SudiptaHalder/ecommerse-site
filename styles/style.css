@@ -1,0 +1,590 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #212529;
+}
+.logo{
+    height:100px;
+    width: px;
+    display: block;
+    padding-bottom: 
+    padding- ;
+}
+button,
+input,
+textarea,
+select {
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    color: #212529;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+
+h6 {
+    color: #d8d8d8;
+}
+
+a {
+    text-decoration: none;
+    color: #212529;
+}
+
+.primary-button {
+    background-color: #1d1d1d;
+    color: white;
+    display: inline-block;
+    padding: 0.8125rem 1.875rem;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.primary-button:hover {
+    background-color: #353535;
+}
+
+.secondary-button {
+    background-color: #ff7f50;
+    color: white;
+    display: inline-block;
+    padding: 0.8125rem 1.875rem;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.secondary-button:hover {
+    background-color: #fa916b;
+}
+
+.button-bottom-outline {
+    background-color: transparent;
+    color: #2a2a2a;
+    display: inline-block;
+    padding: 0.1563rem;
+    border: none;
+    border-bottom: 2px solid #2a2a2a;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.button-bottom-outline:hover {
+    color: white;
+    border-color: white;
+}
+
+.product-card {
+    text-align: center;
+    padding-inline: 0.9375rem;
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin-bottom: 2rem;
+}
+
+.product-card img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+.product-card .stars {
+    padding-block: 10px;
+}
+
+.product-card .stars i {
+    color: #ffc941;
+    font-size: 0.8rem;
+}
+
+.product-card-name {
+    color: #212529;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.product-card-price {
+    color: #212529;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.product-card:hover img {
+    opacity: 0.7;
+}
+
+.product-card:hover button {
+    transform: translateY(10px);
+    opacity: 1;
+}
+
+.product-card button {
+    transform: translateY(30px);
+    transition: transform 0.3s, opacity 0.3s, background 0.3s;
+    opacity: 0;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    padding-block: 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    box-sizing: initial;
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-inline: 0.9375rem;
+    display: flex;
+    justify-content: space-between;
+    height: 3.75rem;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-inline: 1.25rem;
+    transition: color 0.3s ease;
+}
+
+.nav-list .nav-link:hover {
+    color: #ff7f50;
+}
+
+.nav-list .nav-link.active {
+    color: #ff7f50;
+}
+
+.nav-list i {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-inline: 0.4375rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.nav-list i:hover {
+    color: #ff7f50;
+}
+
+footer {
+    background-color: #183D3D;
+    padding-block: 3rem;
+}
+
+footer .content {
+    box-sizing: initial;
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-inline: 0.9375rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 3rem;
+}
+
+footer .content h5 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer .content>div {
+    padding-inline: 0.9375rem;
+}
+
+footer .content .footer-about p {
+    color: #999999;
+    font-size: 0.875rem;
+    font-weight: 300;
+    padding-block: 0.5rem;
+}
+
+footer .content .footer-about a {
+    color: #ff7f50;
+}
+
+footer .content .footer-about a:hover {
+    text-decoration: underline;
+}
+
+footer .content .footer-featured li,
+footer .content .footer-contact li {
+    color: white;
+    opacity: 0.9;
+    text-transform: uppercase;
+}
+
+footer .content .footer-featured li p,
+footer .content .footer-contact li p {
+    text-transform: initial;
+}
+
+footer .content .footer-featured a,
+footer .content .footer-contact a {
+    display: inline-block;
+    color: #999999;
+    font-weight: 300;
+    line-height: 1.8rem;
+    transition: color 0.2s;
+}
+
+footer .content .footer-featured a:hover,
+footer .content .footer-contact a:hover {
+    color: #ff7f50;
+    text-decoration: underline;
+}
+
+footer .content .footer-featured p,
+footer .content .footer-contact p {
+    color: #999999;
+    font-size: 0.875rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+footer .content .footer-instagram .instagram-pictures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+footer .content .footer-instagram .instagram-pictures img {
+    width: 25%;
+}
+
+footer .copyright {
+    box-sizing: initial;
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-inline: 0.9375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+footer .copyright img {
+    padding-inline: 0.9375rem;
+}
+
+footer .copyright p {
+    color: #999999;
+    font-weight: 300;
+}
+
+footer .copyright a {
+    background-color: white;
+    color: #212529;
+    display: inline-block;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 38px;
+    width: 38px;
+    height: 38px;
+    margin-inline: 0.3125rem;
+    border-radius: 50%;
+    font-family: "Segoe UI";
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+footer .copyright a:hover {
+    background-color: #ff7f50;
+    color: white;
+}
+
+.heading {
+    box-sizing: initial;
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-inline: 0.9375rem;
+    text-align: center;
+    padding-block: 3rem;
+}
+
+.heading h3 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+}
+
+.heading hr {
+    background-color: #ff7f50;
+    width: 30px;
+    height: 2px;
+    margin: 1rem auto;
+    border: 2px solid #79AC78;
+}
+
+#home {
+    background-image: url(./virat2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 60px center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#home .content {
+    box-sizing: initial;
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-inline: 0.9375rem;
+}
+
+#home .content h1 span {
+    color: #BB2525;
+}
+
+#home .content p {
+    max-width: 23rem;
+    margin-bottom: 1rem;
+}
+
+#brands .content {
+    box-sizing: initial;
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-inline: 0.9375rem;
+    display: flex;
+    padding-block: 3rem;
+}
+
+#brands .content img {
+    padding-inline: 0.9375rem;
+    max-width: 16.666667%;
+}
+
+#new {
+    display: flex;
+}
+.gig{
+    c
+}
+
+#new .new-card {
+    max-width: 33.333333%;
+    flex: 0 0 33.333333%;
+    position: relative;
+}
+
+#new .new-card img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#new .new-card:nth-child(1) .new-card-details {
+    align-items: flex-start;
+}
+
+#new .new-card:nth-child(3) .new-card-details {
+    align-items: flex-end;
+}
+
+#new .new-card:hover .new-card-details {
+    background-color: rgba(245, 178, 178, 0.7);
+}
+
+#new .new-card-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    transition: background 0.3s ease;
+}
+
+#new .new-card-details a {
+    transform: translateY(70px);
+}
+
+#featured,
+#clothes,
+#watches,
+#shoes {
+    margin-block: 3rem;
+}
+
+#featured .products,
+#clothes .products,
+#watches .products,
+#shoes .products {
+    display: flex;
+    max-width: 1366px;
+    width: 100%;
+    padding-inline: 0.9375rem;
+    margin-inline: auto;
+    flex-wrap: wrap;
+}
+
+#banner {
+    background-image: url(./banner.jpg);
+    background-size: cover;
+    background-position: top 70px center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 100%;
+    padding-block: 3rem;
+    margin-block: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#banner .content {
+    box-sizing: initial;
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-inline: 0.9375rem;
+}
+
+#banner .content h4 {
+    color: #79155B;
+    margin-bottom: 0.5rem;
+}
+
+#banner .content h2 {
+    color: #C23373;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+#products {
+    margin-block: 3rem;
+    padding-block: 3rem;
+}
+
+#products .heading {
+    text-align: left;
+}
+
+#products .heading hr {
+    margin-inline: 0;
+}
+
+#products .products {
+    box-sizing: initial;
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-inline: 0.9375rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#products .pagination {
+    box-sizing: initial;
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-inline: 0.9375rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3rem;
+}
+
+#products .pagination li a {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border: 1px solid #dee2e6;
+    transition: all 0.3s ease;
+}
+
+#products .pagination li a+a {
+    border-left: 0;
+}
+
+#products .pagination li a.active {
+    color: white;
+    background-color: #1d1d1d;
+    cursor: initial;
+    border-color: #1d1d1d;
+}
+
+#products .pagination li a:not(.active):hover {
+    color: white;
+    background-color: #ff7f50;
+    border-color: #ff7f50;
+}
+
+ul {
+    list-style: none;
+}
+
+/*# sourceMappingURL=style.css.map */

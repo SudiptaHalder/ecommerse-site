@@ -1,0 +1,130 @@
+#home {
+  background-image: url(../../img/back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top 60px center;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  .content {
+    @include container();
+
+    h1 span {
+      color: $orange-500;
+    }
+
+    p {
+      max-width: 23rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+#brands {
+  .content {
+    @include container();
+
+    display: flex;
+    padding-block: 3rem;
+
+    img {
+      padding-inline: .9375rem;
+      max-width: 16.666667%;
+    }
+  }
+}
+
+#new {
+  display: flex;
+  
+  .new-card {
+    max-width: 33.333333%;
+    flex: 0 0 33.333333%;
+    position: relative;
+
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+    }
+
+    
+    &:nth-child(1) .new-card-details {
+      align-items: flex-start;
+    }
+    
+    &:nth-child(3) .new-card-details {
+      align-items: flex-end;
+    }
+
+    &:hover  .new-card-details {
+      background-color: $pink-hover;
+    }
+    
+    &-details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
+
+      position: absolute;
+      top: 0;
+
+      transition: background .3s ease;
+
+      a {
+        transform: translateY(70px);
+      }
+    }
+  }
+}
+
+#featured, #clothes, #watches, #shoes {
+  margin-block: 3rem;
+
+  .products {
+    @include container-fluid();
+    flex-wrap: wrap;
+  }
+}
+
+#banner {
+  background-image: url(./../../img/banner/parallax.jpg);
+  background-size: cover;
+  background-position: top 70px center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100%;
+  padding-block: 3rem;
+  margin-block: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  .content {
+    @include container();
+
+    h4 {
+      color: $gray-100;
+      margin-bottom: .5rem;
+    }
+
+    h2 {
+      color: $white;
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 3rem;
+      margin-bottom: .5rem;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import 'partials/colors';
+@import 'partials/typography';
+@import 'abstracts/mixins';
+@import 'components/buttons';
+@import 'components/product-card';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/heading';
+@import 'pages/home';
+@import 'pages/shop';
+
+ul {
+  list-style: none;
+}
+
